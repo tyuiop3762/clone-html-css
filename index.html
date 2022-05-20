@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome To Kokoa talk</title>
+    </head>
+    <body>
+        <div class="status-bar">
+            <div class="status-bar__column">
+                <span>No Service</span>
+                <i class="fa-solid fa-wifi fa-lg"></i>
+            </div>
+            <div class="status-bar__column">
+                <span>4:44</span>
+            </div>
+            <div class="status-bar__column">
+                <span>44%</span>
+                <i class="fa-solid fa-battery-half fa-lg"></i>
+                <i class="fa-solid fa-bolt fa-xs"></i>
+            </div>
+        </div>
+        <!--status-bar end-->
+        <header class="welcome-header">
+            <h1 class="welcome-header__title">Welcome to Kokoa clone</h1>
+            <p class="welcome-hedaer__text">
+                If you have a Kokoa Account, log in with your email or phone number
+            </p>
+        </header>
+        
+        <form action="friends.html" methood="get" id="login-form">
+            <input name="username" type="text" placeholder="Email or Phone number">
+            <input name="password" type="password" placeholder="Password">
+            <input type="submit" value="Log in">
+            <a href="#">Find Kokoa Account or Password</a>
+        </form>
+
+
+    <script src="https://kit.fontawesome.com/5dc1e3e41e.js" crossorigin="anonymous"></script>
+    </body>
+</html>
