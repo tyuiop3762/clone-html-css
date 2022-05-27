@@ -1,0 +1,86 @@
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px 50px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 253, 253, 0.3);
+    transition: color 2s ease-in-out;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link {
+    position: relative;
+}
+
+.nav__btn:focus {
+    border-color: rgb(0, 0, 0);
+}
+
+@keyframes chatAnimation {
+    0% {
+        transform: none;
+    }
+
+    50% {
+        transform: translateY(-5px) rotatey(180deg);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+.chat__dot {
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+    animation: chatAnimation 2s ease-in-out infinite;
+}
+
+.alarm__dot {
+    background-color: gray;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 20px;
+    bottom: 30px
+}
+
+@keyframes btnAnimation {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.nav_btn {
+    transform: translateY(50px);
+    opacity: 0;
+    animation: btnAnimation 0.3s ease-in-out forwards;
+}
+
+.nav_btn:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.nav_btn:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.nav_btn:last-child {
+    animation-delay: 0.8s;
+}

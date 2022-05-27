@@ -1,0 +1,66 @@
+.header__title {
+    font-size: 30px;
+    text-align: center;
+    margin: 120px 0px;
+}
+
+.header__title h1 {
+    margin-bottom: 30px;
+    margin: 30px auto;
+    font-weight: 600;
+    transition: color 4s ease-in-out;
+}
+
+.header__title p {
+    font-size: 20px;
+    width: 300px;
+    margin: 0 auto;
+    color: rgba(255, 248, 248, 0.8);
+    transition: color 4s ease-in-out;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+
+.user__info {
+    height: 50px;
+    border: none;
+    font-size: 18px;
+    background-color: rgba(134, 68, 68, 0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+    transition: border-color 0.5s ease-in-out;
+}
+
+
+.user__info::placeholder {
+    color: rgba(255, 248, 248, 0.7);
+}
+
+.user__info:focus {
+    border-color: rgb(255, 255, 255, 0.1);
+    color: white;
+}
+
+#index__login {
+    background-color: var(--color);
+    color: white;
+    height: 50px;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#inex__login:focus {
+    color: brown;
+}
+
+#login-form a {
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 14px;
+}
